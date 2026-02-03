@@ -291,17 +291,43 @@ height: 20px;
 }
 
 
+
+
 .gallery{
     padding:100px 20px;
     background:#f9fafc;
-    text-align:center;
-    justify-content: center;
-    align-items: center;
-
+  
 }
 
 .gallery P{
-    font-size: 17px;
+    font-size: 16px;
+    padding-left: 100px;
+    
+    
+      
+}
+.t{
+    text-align: center;
+}
+
+.gallery p{
+    margin:14px 0;
+}
+
+.gallery h1{
+    font-size:38px;
+    color:#0c0e50;
+    margin-bottom:14px;
+    padding-left: 100px;
+ 
+}
+
+
+.gallery h2{
+    color:black;
+    font-size:24px;
+    padding-left: 100px;
+   
 }
 
 .gallery-grid{
@@ -350,12 +376,15 @@ height: 20px;
     transition:all .4s ease; 
     margin-top: -30vh;
     
+    
+    
 }
 
 .explore-button{
     
     background:#f9c74f;
     color:#000;
+  
 }
 
 .explore-button:hover{
@@ -442,9 +471,21 @@ height: 20px;
     height: 20%;
 }
 
+
+.contact-sec img{
+    width:26px;
+   border-radius: 6px;
+}
+.contact-sec a{
+    display: inline-flex;
+   padding: 3px;
+}
+
+
+/*
 @media(max-width:768px){
     .navbar ul{
-        display:none;
+        display: none;
     }
 
     .hero h1{
@@ -456,10 +497,142 @@ height: 20px;
     }
 }
 
+
+*/
+
+
+
+/*
+
+@media (max-width:768px){
+
+  .navbar{
+    flex-wrap:wrap;
+  }
+
+  .navbar ul{
+    display:flex;              
+    width:100%;
+    flex-direction:column;     
+    background:#0c0e50;
+    margin-top:12px;
+    padding:20px 25px;
+    gap:12px;
+  }
+
+  .navbar ul li a{
+    display:block;
+    width:100%;
+  }
+
+  .RequestQuote{
+    margin-top:9px;
+  }
+  .h2{
+       padding-top: 250px;
+    }
+   .hero{
+        height: 1000px;
+    }
+      .gallery-grid{
+        padding:71px;
+    }
+     .about-Portfolio p{
+        padding: 0px;
+        
+    }
+    .about-Portfolio h1{
+        padding: 0px;
+    }
+     .about-Portfolio h2{
+        padding: 0px;
+    }
+}
+
+
+*/
+
+@media (max-width:768px){
+
+  .navbar{
+    flex-wrap:wrap;
+  }
+
+  .navbar ul{
+    display:flex;              
+    width:100%;
+    flex-direction:row;     
+    background:#0c0e50;
+    margin-top:12px;
+    padding:20px 25px;
+    gap:12px;
+  }
+
+  .navbar ul li a{
+    display:block;
+    width:100%;
+  }
+
+  .RequestQuote{
+    margin-top:9px;
+
+  }
+  .h2{
+       padding-top: 100px;
+    }
+   .hero{
+        height: 800px;
+    }
+      .gallery-grid{
+        padding:71px;
+    }
+     .about-Portfolio p{
+        padding: 0px;
+        
+    }
+    .about-Portfolio h1{
+        padding: 0px;
+    }
+     .about-Portfolio h2{
+        padding: 0px;
+    }
+}
+
+
 @media(max-width:480px){
     .BookMeeting,
     .whatsapp-Chat{
         display:block;
         margin:15px auto;
     }
+
+    .gallery-grid{
+        padding:71px;
+    }
+
+    .hero{
+        height: 1300px;
+    }
+
+    .h2{
+       padding-top: 250px;
+    }
+
+
+    .about-Portfolio p{
+        padding: 0px;
+        
+    }
+    .about-Portfolio h1{
+        padding: 0px;
+    }
+    .about-Portfolio h2{
+        padding: 0px;
+    }
+
+    .navbar ul{
+    flex-direction:column;
+    gap:12px;
+    text-align:start;
+  }
 }
