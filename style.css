@@ -130,6 +130,10 @@ img{
     transition:all .4s ease;
 }
 
+
+
+
+
 .BookMeeting{
     background:#f9c74f;
     color:#000;
@@ -611,11 +615,11 @@ height: 20px;
     }
 
     .hero{
-        height: 1300px;
+        height: 1100px;
     }
 
     .h2{
-       padding-top: 250px;
+       padding-top: 70px;
     }
 
 
@@ -631,7 +635,7 @@ height: 20px;
     }
 
     .navbar ul{
-    flex-direction:column;
+    flex-direction:row;
     gap:12px;
     text-align:start;
   }

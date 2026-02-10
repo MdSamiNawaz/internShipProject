@@ -371,7 +371,7 @@ display: inline-flex;
   }
 
   .navbar ul{
-    flex-direction:column;
+    flex-direction:row;
     gap:14px;
     text-align:start;
   }
@@ -380,7 +380,7 @@ display: inline-flex;
     padding:95px 16px;
   }
   .hero{
-    margin-top: 190px;
+    margin-top: 10px;
   }
 
   .hero h1{
@@ -421,6 +421,6 @@ display: inline-flex;
 
   .footer{
     grid-template-columns:1fr;
-    text-align:center;
+    text-align:start;
   }
 }
