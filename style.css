@@ -98,24 +98,93 @@ img{
 .hero-box{
     max-width:1250px;
     margin:auto;
+    padding-left: 30px;
     
 }
 
-/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero{
      display: inline-flex;
 }
-.hImg img{
-    width: 90%;
-    height: 500px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
-    transition: all .45s ease;
+
+
+.hImg{
+    display: flex; 
+  width: 100%;
+  flex: 1 1 400px;
+  height: 450px;
+  overflow: hidden;
+    flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow:0px 8px 50px rgba(2, 248, 232, 0.966);
 }
-*/
+
+
+
+.hImg img{
+   width: 100%;
+  height: auto; 
+ object-fit: cover; 
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  animation: imageChange 48s infinite ease-in-out;
+}
+
+ 
+
+
+.hImg:hover{
+   box-shadow:0px 8px 50px rgba(248, 2, 39, 0.966);
+   transition: all 1s ease;
+}
+
+
+.hImg img:hover {
+  transform: scale(1.05);
+ 
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero h2{
     color:#f9c74f;
     font-size:29px;
+    padding-right: 25px;
 }
 
 .hero h1{
@@ -136,7 +205,7 @@ img{
     display:inline-flex;
     align-items:center;
     gap:5px;
-    padding:14px 26px;
+    padding:10px 20px;
     border-radius:35px;
     margin:25px 15px 0 0;
     font-weight:600;
@@ -181,7 +250,8 @@ img{
 
 .abouts{
     padding:100px 20px;
-    background:#f9fafc;
+    background: radial-gradient(circle at top, #09000f, #2e1569);
+    color: rgba(255, 255, 255, 0.821);
 }
 
 .about{
@@ -191,7 +261,11 @@ img{
 
 .about h1{
     font-size:40px;
-    color:#0c0e50;
+   color: #f9c74f;
+}
+
+.about h2{
+    color: #f9c74f;;
 }
 
 .about p{
@@ -203,10 +277,12 @@ img{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:22px;
+    color: black;
+     
 }
 
 .Experience{
-    background:#fff;
+    background:#c0a0e1;
     padding:18px;
     border-radius:12px;
    
@@ -313,7 +389,8 @@ height: 20px;
 
 .gallery{
     padding:100px 20px;
-    background:#f9fafc;
+   background:linear-gradient(135deg,#0c0e50,#1b1f8a);
+   color: white;
   
 }
 
@@ -334,7 +411,7 @@ height: 20px;
 
 .gallery h1{
     font-size:38px;
-    color:#0c0e50;
+    color:#f9c74f;
     margin-bottom:14px;
     padding-left: 100px;
  
@@ -342,7 +419,7 @@ height: 20px;
 
 
 .gallery h2{
-    color:black;
+    color:#f9c74f;
     font-size:24px;
     padding-left: 100px;
    
@@ -363,7 +440,7 @@ height: 20px;
 .gallery-grid img{
 
     transition:all .45s ease;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    box-shadow:0 10px 30px rgba(252, 219, 4, 0.866);
    height: 200px;
    width: 300px;
     border-radius:9px;
@@ -377,6 +454,7 @@ height: 20px;
 
 .gallery-grid img:hover{
     transform:scale(1.05);
+    box-shadow:0 10px 30px rgba(252, 4, 4, 0.866);
     
 }
 
@@ -600,11 +678,35 @@ height: 20px;
 
 
 */
+@media (max-width: 992px){
+  
+  .hImg{
+      height: 380px;
+  }
+
+}
+ 
+
+
+
+
+
 
 @media (max-width:768px){
 
   .navbar{
     flex-wrap:wrap;
+  }
+
+   .hero{
+      flex-direction: column;
+      text-align: start;
+  }
+
+  .hImg{
+    margin-top: 20px;
+      width: 100%;
+      height: 320px;
   }
 
   .navbar ul{
@@ -664,9 +766,35 @@ height: 20px;
 
 
 @media(max-width:480px){
+           
 
+   .hImg{
+      height: 250px;
+      border-radius: 15px;
+  }
 
+  .hero{
+      flex-direction: column;
+      text-align: start;
+  }
+
+  .hero-box{
+    margin-left: -35px;
+    
+  }
    
+    .hImg{
+      height: auto;       
+      min-height: 200px;
+        
+  }
+
+  .hImg img{
+      height: auto;     
+      width: 100%;
+      object-fit: contain;
+      
+  }
     .BookMeeting,
     .whatsapp-Chat{
         display:block;
@@ -726,7 +854,7 @@ height: 20px;
     }
 
     .hero{
-        height: 800px;
+        height: 00px;
     }
 
     .h2{
@@ -756,7 +884,7 @@ height: 20px;
 @media(max-width:480px){
 
     .hero{
-        height: 750px;
+        height: 950px;
     }
 
     .BookMeeting,
@@ -786,7 +914,11 @@ height: 20px;
    
     
 }
+ 
 
+.about h2{
+    font-size: 23px;
+}
 
 .hero-box h2{
     font-size: 22px;
@@ -802,14 +934,23 @@ height: 20px;
     .whatsapp-Chat img{
     width:18px;
      display: inline-flex;
+     margin-right: -5px;
     
 }
 
 .BookMeeting img{
     height: 18px;
     display: inline-flex;
+    margin-right: -5px;
    
 }
+.BookMeeting a{
+    font-size: 12px;
+}
+
+    .gallery-grid{
+        margin-left: -30px;
+    }
     
 }
 
