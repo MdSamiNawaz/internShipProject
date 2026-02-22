@@ -117,7 +117,7 @@ img{
 
 
 .hero{
-     display: inline-flex;
+     display:flex;
 }
 
 
