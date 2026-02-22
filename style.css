@@ -122,7 +122,7 @@ img{
 
 
 .hImg{
-    display: flex; 
+  
   width: 100%;
   flex: 1 1 400px;
   height: 450px;
@@ -159,9 +159,19 @@ img{
  
 }
 
+
+@keyframes imageChange {
+  0%   { content: url("./pic/f1.png"); }
+  12.5%  { content: url("./pic/f2.png"); }
+  25%  { content: url("./pic/f3.png"); }
+  37.5%  { content: url("./pic/f4.jpg"); }
+  50%  { content: url("./pic/f5.jpg"); }
+  62.5%  { content: url("./pic/f6.jpg"); }
+  75%  { content: url("./pic/f7.jpg"); }
+  87.5%  { content: url("./pic/f8.jpg"); }
+  100% { content: url("./pic/f10.jpg"); }
  
-
-
+}
 
 
 
